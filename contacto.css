@@ -1,0 +1,61 @@
+#redes-sociales {
+    padding: 2rem 0;
+    background: linear-gradient(45deg, #000000, #1a1a1a);
+    text-align: center;
+  }
+  
+  #redes-sociales h2 {
+    color: #ffd700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .socialContainer:hover {
+    background-color: #ffd700;
+    transform: scale(1.1);
+  }
+  
+  .socialSvg {
+    width: 30px;
+    height: 30px;
+    fill: #ffd700;
+  }
+  
+  .socialContainer:hover .socialSvg {
+    fill: #000000;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .socialContainer {
+    animation: float 3s ease-in-out infinite;
+  }
