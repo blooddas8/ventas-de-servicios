@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Eventos de Fuegos Artificiales</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="ANIMACIONES.JS"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Usuario</h1>
+        <a href="iniciar_secion.html">Iniciar secion</a>
+        <a href="productos.html">Productos</a>
+        <a href="empresa.html">Empresa</a>
+        <form id="registrationForm">
+            <div id="clientFields">
+                <h2>Registro de Cliente</h2>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                <input type="number" id="edad" name="edad" placeholder="Edad" required>
+                <input type="text" id="direccion" name="direccion" placeholder="Dirección" required>
+                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+            </div>
+            <div id="adminFields" style="display: none;">
+                <h2>Registro de Administrador</h2>
+                <input type="text" id="nombreAdmin" name="nombreAdmin" placeholder="Nombre" required>
+                <input type="text" id="apellidosAdmin" name="apellidosAdmin" placeholder="Apellidos" required>
+                <input type="number" id="edadAdmin" name="edadAdmin" placeholder="Edad" required>
+                <input type="text" id="curp" name="curp" placeholder="CURP" required>
+                <input type="text" id="idEmpleado" name="idEmpleado" placeholder="Número de identificación de empleado" required>
+                <input type="text" id="rfc" name="rfc" placeholder="RFC" required>
+                <input type="email" id="correoEmpresarial" name="correoEmpresarial" placeholder="Correo empresarial" required>
+                <input type="password" id="contrasenaAdmin" name="contrasenaAdmin" placeholder="Contraseña" required>
+            </div>
+            <button type="submit">Registrarse</button>
+        </form>
+        <button id="toggleForm">Cambiar a registro de administrador</button>
+        <p>¿Ya tienes una cuenta? <a href="iniciar_sesion.html">Iniciar sesión</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

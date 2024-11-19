@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Eventos de Fuegos Artificiales</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="ANIMACIONES.JS"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Iniciar Sesión</h1>
+        <script src="script.js"></script>
+    <a href="index.html">index</a>
+    <a href="productos.html">Productos</a>
+    <a href="iniciar_secion.html">Empresa</a>
+        <form id="loginForm">
+            <div id="clientLogin">
+                <h2>Cliente</h2>
+                <input type="email" id="correoCliente" name="correoCliente" placeholder="Correo electrónico" required>
+                <input type="password" id="contrasenaCliente" name="contrasenaCliente" placeholder="Contraseña" required>
+            </div>
+            <div id="adminLogin" style="display: none;">
+                <h2>Administrador</h2>
+                <input type="email" id="correoEmpresarial" name="correoEmpresarial" placeholder="Correo empresarial" required>
+                <input type="text" id="idEmpleado" name="idEmpleado" placeholder="Número de identificación de empleado" required>
+                <input type="password" id="contrasenaAdmin" name="contrasenaAdmin" placeholder="Contraseña" required>
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <button id="toggleLogin">Cambiar a inicio de sesión de administrador</button>
+        <p>¿No tienes una cuenta? <a href="index.html">Registrarse</a></p>
+    </div>
+</body>
+</html>
